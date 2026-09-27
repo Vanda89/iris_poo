@@ -3,7 +3,6 @@ public abstract class Media {
     protected String title;
     protected int year;
     protected double duration; // en minutes
-    private int age;
 
     // Constructeur
     public Media(String title, int year, double duration) {
@@ -19,8 +18,7 @@ public abstract class Media {
 
     // Retourne l'âge du media (année actuelle - année de création)
     public int getAge() {
-        age = java.time.LocalDate.now().getYear() - year;
-        return age;
+        return java.time.LocalDate.now().getYear() - year;
     }
 
     // Méthodes abstraites
@@ -51,6 +49,11 @@ public abstract class Media {
 
     public void setDuration(double duration) {
         this.duration = duration;
+    }
+
+    @Override
+    public String toString() {
+        return title;
     }
 
 }
