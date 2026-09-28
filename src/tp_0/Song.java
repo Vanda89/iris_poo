@@ -1,3 +1,5 @@
+package tp_0;
+
 public class Song extends Media {
     private String album;
     private String artist;
@@ -15,12 +17,12 @@ public class Song extends Media {
 
     @Override
     public void pause() {
-        System.out.println("Song paused");
+        System.out.println("tp_0.Song paused");
     }
 
     @Override
     public String getMediaType() {
-        return "Song";
+        return "tp_0.Song";
     }
 
     @Override

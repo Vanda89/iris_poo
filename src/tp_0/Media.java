@@ -1,3 +1,5 @@
+package tp_0;
+
 public abstract class Media {
     // Attributs protégés
     protected String title;

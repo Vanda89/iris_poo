@@ -1,3 +1,5 @@
+package tp_0;
+
 public class HighFantasyMovie extends Movie {
 
     public HighFantasyMovie(String title, int year, double duration, String director, String producer) {

@@ -1,3 +1,5 @@
+package tp_0;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -11,7 +13,7 @@ public class MediaPlayer {
     // Initialiser le tableau
     public MediaPlayer(int capacity) {
        this.capacity = capacity;
-       this.playlist = new ArrayList<Media>();
+       this.playlist = new ArrayList<>();
        this.currentIndex = 0;
        this.mediaCount = 0;
     }

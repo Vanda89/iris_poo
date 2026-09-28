@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package tp_0;
 
 public class Main {
     public static void main(String[] args) {
@@ -68,12 +68,12 @@ public class Main {
         System.out.println("The total size of the media playlist is : " + player.getTotalSize() + " MB");
         System.out.println();
         System.out.println("The media with the same type are : ");
-        for (Media media : player.getMediaByType("Song")) {
+        for (Media media : player.getMediaByType("tp_0.Song")) {
             System.out.println(media.getTitle());
         }
         System.out.println();
         System.out.println("Subscriptions : ");
-        for (Media media : player.getMediaByType("Podcast")) {
+        for (Media media : player.getMediaByType("tp_0.Podcast")) {
             System.out.println(media.getTitle());
             techCoffee.subscribe();
         }

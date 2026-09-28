@@ -1,3 +1,5 @@
+package tp_0;
+
 public class Movie extends Media {
     private String genre;
     private String director;
@@ -17,12 +19,12 @@ public class Movie extends Media {
 
     @Override
     public void pause() {
-        System.out.println("Movie paused");
+        System.out.println("tp_0.Movie paused");
     }
 
     @Override
     public String getMediaType() {
-        return "Movie";
+        return "tp_0.Movie";
     }
 
     @Override

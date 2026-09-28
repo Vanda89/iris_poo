@@ -1,3 +1,5 @@
+package tp_0;
+
 public class AnimationMovie extends  Movie {
 
     public AnimationMovie(String title, int year, double duration, String director, String producer) {

@@ -1,3 +1,5 @@
+package tp_0;
+
 public class Podcast extends Media{
     private String host;
     private int episodeNumber;
@@ -15,12 +17,12 @@ public class Podcast extends Media{
 
     @Override
     public void pause() {
-        System.out.println("Podcast paused");
+        System.out.println("tp_0.Podcast paused");
     }
 
     @Override
     public String getMediaType() {
-        return "Podcast";
+        return "tp_0.Podcast";
     }
 
     @Override

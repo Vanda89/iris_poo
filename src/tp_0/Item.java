@@ -1,3 +1,5 @@
+package tp_0;
+
 public class Item {
     private String name;
     private double price;
