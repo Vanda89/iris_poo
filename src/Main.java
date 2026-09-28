@@ -24,12 +24,17 @@ public class Main {
         System.out.println((int) godfather.getFileSize() + " MB");
         godfather.showCredits();
         inception.displayInfo();
+        //lordsOfTheRings.setRating(21);
+        lordsOfTheRings.rate(20);
+        dungeonsAndDragons.rate(16);
+        inception.rate(14);
         System.out.println();
         // SONG
         System.out.println("SONG");
-        Song lullaby = new Song("Harvester of Sorrow", 1988, 5.45, "...And Justice for All", "Metallica");
-        Song bohemian = new Song("Bohemian Rhapsody", 1975, 6, "A Night at the Opera", "Queen");
-        Song thriller = new Song("Thriller", 1982, 5.5, "Thriller", "Mickael Jackson");
+        Song lullaby = new Song("Harvester of Sorrow", 1988, 5.45, 17, "...And Justice for All", "Metallica");
+        Song bohemian = new Song("Bohemian Rhapsody", 1975, 6, 18,"A Night at the Opera", "Queen");
+        Song thriller = new Song("Thriller", 1982, 5.5, 19, "Thriller", "Mickael Jackson");
+        Song dynamite = new Song("Dynamite", 2020, 3.19, 20, "Be", "BTS");
         System.out.println(lullaby.getTitle());
         System.out.println(lullaby.getMediaType());
         lullaby.displayInfo();
@@ -57,6 +62,7 @@ public class Main {
         player.addMedia(lionKing);
         player.addMedia(toyStory);
         player.playAll();
+        System.out.println();
         player.displayPlaylist();
         System.out.println();
         System.out.println("The total size of the media playlist is : " + player.getTotalSize() + " MB");

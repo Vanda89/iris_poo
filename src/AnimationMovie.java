@@ -6,6 +6,7 @@ public class AnimationMovie extends  Movie {
 
     @Override
     public double getDuration() {
+        System.out.println("Showing High Fantasy movie duration");
         return super.getDuration();
     }
 

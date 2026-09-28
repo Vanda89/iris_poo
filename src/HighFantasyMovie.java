@@ -16,6 +16,7 @@ public class HighFantasyMovie extends Movie {
 
     @Override
     public void showCredits() {
+        System.out.println("Showing High Fantasy movie Credits");
         super.showCredits();
     }
 

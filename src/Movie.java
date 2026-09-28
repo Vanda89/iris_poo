@@ -10,7 +10,6 @@ public class Movie extends Media {
         this.producer = producer;
     }
 
-
     @Override
     public void play() {
         System.out.println("Playing movie: " + title);

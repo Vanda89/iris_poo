@@ -2,8 +2,8 @@ public class Song extends Media {
     private String album;
     private String artist;
 
-    public Song(String title, int year, double duration, String album, String artist) {
-        super(title, year, duration);
+    public Song(String title, int year, double duration, int rating, String album, String artist) {
+        super(title, year, duration, rating);
         this.album = album;
         this.artist = artist;
     }

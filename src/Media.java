@@ -3,6 +3,7 @@ public abstract class Media {
     protected String title;
     protected int year;
     protected double duration; // en minutes
+    protected int rating;
 
     // Constructeur
     public Media(String title, int year, double duration) {
@@ -11,14 +12,24 @@ public abstract class Media {
         this.duration = duration;
     }
 
+    public Media(String title, int year, double duration, int rating) {
+        this(title, year, duration);
+        this.rating = rating;
+    }
+
     // Méthodes concrètes
     public void displayInfo() {
-        System.out.println("Title: " + title + ", année: " +  year);
+        System.out.println("Title: " + title + ", année: " +  year + ", rating: " + rating);
     }
 
     // Retourne l'âge du media (année actuelle - année de création)
     public int getAge() {
         return java.time.LocalDate.now().getYear() - year;
+    }
+
+    // Set the rating
+    public void rate(int rating) {
+        setRating(rating);
     }
 
     // Méthodes abstraites
@@ -49,6 +60,17 @@ public abstract class Media {
 
     public void setDuration(double duration) {
         this.duration = duration;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        if (rating < 0 || rating > 20) {
+            throw new IllegalArgumentException("Rating should be between 0 and 20");
+        }
+        this.rating = rating;
     }
 
     @Override
