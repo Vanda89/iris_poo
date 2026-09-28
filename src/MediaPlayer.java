@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class MediaPlayer {
-    private ArrayList<Media> playlist;
+    private List<Media> playlist;
     private int currentIndex;
     private int mediaCount;
     private int capacity;
@@ -48,7 +49,7 @@ public class MediaPlayer {
 
     // Retourner tous les medias d'un type donné
     public Media[] getMediaByType(String type) {
-        ArrayList<Media> mediaWithSameType = new ArrayList<>();
+        List<Media> mediaWithSameType = new ArrayList<>();
 
         for (Media media : playlist) {
             if (media.getMediaType().equals(type)) {
@@ -60,7 +61,7 @@ public class MediaPlayer {
 
     // Returns media created after the specified year
     public Media[] getRecentMedia(int year) {
-        ArrayList<Media> mediaCreatedAfterSpecifiedYear = new ArrayList<>();
+        List<Media> mediaCreatedAfterSpecifiedYear = new ArrayList<>();
 
         for (Media media : playlist) {
             if (media.getYear() > year) {
@@ -72,7 +73,7 @@ public class MediaPlayer {
 
     // Returns media at a size larger than the specified size
     public Media[] getLargeMedia(double sizeLimit) {
-        ArrayList<Media> mediaLargerThanSizeLimit = new ArrayList<>();
+        List<Media> mediaLargerThanSizeLimit = new ArrayList<>();
 
         for (Media media : playlist) {
             if (media.getFileSize() > sizeLimit) {
@@ -98,11 +99,11 @@ public class MediaPlayer {
         Collections.shuffle(playlist);
     }
 
-    public ArrayList<Media> getPlaylist() {
+    public List<Media> getPlaylist() {
         return playlist;
     }
 
-    public void setPlaylist(ArrayList<Media> playlist) {
+    public void setPlaylist(List<Media> playlist) {
         this.playlist = playlist;
     }
 
