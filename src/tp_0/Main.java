@@ -24,7 +24,13 @@ public class Main {
         System.out.println((int) godfather.getFileSize() + " MB");
         godfather.showCredits();
         inception.displayInfo();
-        //lordsOfTheRings.setRating(21);
+        System.out.println();
+        System.out.println("Exception test");
+        try {
+            lordsOfTheRings.setRating(21);
+        } catch (IllegalArgumentException exception) {
+            System.out.println(exception.getMessage());
+        }
         lordsOfTheRings.rate(20);
         dungeonsAndDragons.rate(16);
         inception.rate(14);
