@@ -65,5 +65,10 @@ public class Slot {
         this.room = room;
     }
 
-
+    @Override
+    public String toString() {
+        return " startTime : " + startTime +
+                ", duration : " + duration +
+                ", room : " + room;
+    }
 }

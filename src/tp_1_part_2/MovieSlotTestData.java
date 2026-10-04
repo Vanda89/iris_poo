@@ -1,3 +1,5 @@
+package tp_1_part_2;
+
 public class MovieSlotTestData {
     
     // Données valides pour tester la fonctionnalité de base
