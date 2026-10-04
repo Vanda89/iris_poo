@@ -2,13 +2,11 @@
 
 ## TP0 Héritage et Polymorphisme
 branche feature/tp_0_Heritage_polymorphisme
-Exemple d'utilisation des exceptions dans le setter de rating dans tp_0.tp_0.tp_0.Media
-Example d'utilisation du deuxieme constructeur de tp_0.tp_0.tp_0.Media dans la classe fille tp_0.tp_0.tp_0.Song avec le rating
 
 ## TP1 Evolutivité et Robustesse
 Séparation en deux parties distinctes pour une meilleure compréhension du main
-branche tp_1_scalability_and_robustness
-branche tp_1_scalability_and_robustness_part_2
+<br>branche tp_1_scalability_and_robustness
+<br>branche tp_1_scalability_and_robustness_part_2
 
 ## TP2 Tests unitaires
 
