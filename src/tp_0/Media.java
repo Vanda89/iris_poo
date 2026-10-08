@@ -77,7 +77,11 @@ public abstract class Media {
 
     @Override
     public String toString() {
-        return title;
+        return "Media{" +
+                "title='" + title + '\'' +
+                ", year=" + year +
+                ", duration=" + duration +
+                ", rating=" + rating +
+                '}';
     }
-
 }

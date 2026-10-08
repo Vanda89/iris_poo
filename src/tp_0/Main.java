@@ -12,12 +12,12 @@ public class Main {
         System.out.println();
         // MOVIE
         System.out.println("MOVIE");
-        Movie godfather = new Movie("The Godfather", 1972, 175, "Drama", "Francis Ford Coppola", "Albert S. Ruddy");
-        Movie inception = new Movie("Inception", 2010, 148, "Thriller", "Christopher Nolan", "Christopher Nolan");
-        HighFantasyMovie lordsOfTheRings = new HighFantasyMovie("Lord of the rings : Fellowship of the Ring", 2001, 219, "Peter Jackson", "Peter Jackson");
-        HighFantasyMovie dungeonsAndDragons = new HighFantasyMovie("Dungeons & Dragons", 2023, 134, "Jonathan Goldstein", "Brian David Goldner");
-        AnimationMovie lionKing = new AnimationMovie( "Le Roi Lion",1994, 88,"Roger Allers et Rob Minkoff","Don Hahn");
-        AnimationMovie toyStory = new AnimationMovie("Toy Story",1995,81,"John Lasseter","Bonnie Arnold");
+        Movie godfather = new Movie("The Godfather", 1972, 175.0, "Drama", "Francis Ford Coppola", "Albert S. Ruddy");
+        Movie inception = new Movie("Inception", 2010, 148.0, "Thriller", "Christopher Nolan", "Christopher Nolan");
+        HighFantasyMovie lordsOfTheRings = new HighFantasyMovie("Lord of the rings : Fellowship of the Ring", 2001, 219.0, "Peter Jackson", "Peter Jackson");
+        HighFantasyMovie dungeonsAndDragons = new HighFantasyMovie("Dungeons & Dragons", 2023, 134.0, "Jonathan Goldstein", "Brian David Goldner");
+        AnimationMovie lionKing = new AnimationMovie( "Le Roi Lion",1994, 88.0,"Roger Allers et Rob Minkoff","Don Hahn");
+        AnimationMovie toyStory = new AnimationMovie("Toy Story",1995,81.0,"John Lasseter","Bonnie Arnold");
         System.out.println(godfather.getAge());
         System.out.println(godfather.getMediaType());
         godfather.displayInfo();
@@ -38,7 +38,7 @@ public class Main {
         // SONG
         System.out.println("SONG");
         Song lullaby = new Song("Harvester of Sorrow", 1988, 5.45, 17, "...And Justice for All", "Metallica");
-        Song bohemian = new Song("Bohemian Rhapsody", 1975, 6, 18,"A Night at the Opera", "Queen");
+        Song bohemian = new Song("Bohemian Rhapsody", 1975, 6.0, 18,"A Night at the Opera", "Queen");
         Song thriller = new Song("Thriller", 1982, 5.5, 19, "Thriller", "Mickael Jackson");
         Song dynamite = new Song("Dynamite", 2020, 3.19, 20, "Be", "BTS");
         System.out.println(lullaby.getTitle());
@@ -51,7 +51,7 @@ public class Main {
         System.out.println();
         // PODCAST
         System.out.println("PODCAST");
-        Podcast techCoffee = new Podcast("Tech Café", 2014, 90, "Spotify", 524);
+        Podcast techCoffee = new Podcast("Tech Café", 2014, 90.0, "Spotify", 524);
         System.out.println(techCoffee.getFileSize());
         System.out.println();
 
@@ -90,7 +90,7 @@ public class Main {
             System.out.println(media.getTitle() + " " + media.getYear());
         }
         System.out.println();
-        double specifiedSize = 22;
+        double specifiedSize = 22.0;
         System.out.println("The media larger than the size " + specifiedSize + " MB are : ");
         for (Media media : player.getLargeMedia(specifiedSize)) {
             System.out.println(media.getTitle() + " " + media.getFileSize());

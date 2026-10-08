@@ -42,7 +42,7 @@ public class MediaPlayer {
 
     // Calculer la taille totale de tous les medias
     public double getTotalSize() {
-        double totalSize = 0;
+        double totalSize = 0f;
         for (Media media : playlist) {
             totalSize += media.getFileSize();
         }
@@ -87,13 +87,13 @@ public class MediaPlayer {
 
     // Displays the total duration of all media in hours
     public double getTotalDuration() {
-        double totalDuration = 0;
+        double totalDuration = 0f;
 
         for (Media media : playlist) {
             totalDuration += media.getDuration();
         }
 
-        double totalDurationInHours = totalDuration / 60 ;
+        double totalDurationInHours = totalDuration / 60f ;
         return Math.floor(totalDurationInHours * 100) / 100;
     }
 

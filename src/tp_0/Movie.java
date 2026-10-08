@@ -19,17 +19,17 @@ public class Movie extends Media {
 
     @Override
     public void pause() {
-        System.out.println("tp_0.Movie paused");
+        System.out.println("Movie paused");
     }
 
     @Override
     public String getMediaType() {
-        return "tp_0.Movie";
+        return "Movie";
     }
 
     @Override
     public double getFileSize() {
-        return duration * 10;
+        return duration * 10f;
     }
 
     public void showCredits() {

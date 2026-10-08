@@ -4,6 +4,7 @@ public class Item {
     private String name;
     private double price;
     private double taxRate;
+    private double discount;
 
     public Item(String name, double price, double taxRate) {
         this.name = name;
@@ -12,11 +13,12 @@ public class Item {
     }
 
     public double getTotalPrice() {
-        return price + price * taxRate;
+        double totalPrice = this.price + this.price * this.taxRate;
+        return totalPrice - totalPrice * this.discount / 100.0;
     }
 
     public void applyDiscount(double percentage) {
-        price =  price - price * percentage / 100;
+        this.discount = percentage;
     }
 
     public String getName() {
