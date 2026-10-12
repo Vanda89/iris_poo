@@ -6,7 +6,7 @@ package tp_1;
 
 public enum Priority {
     HIGH("Haute"),
-    MEDIUM("Moyenne"),
+    MEDIUM("Moyenne"), 
     LOW("Basse");
 
     private final String label;
@@ -14,24 +14,20 @@ public enum Priority {
     Priority(String label){
         this.label = label;
     }
-
+    
     // Méthode toString() personnalisée pour l'affichage
     @Override
     public String toString() {
         return this.label;
     }
-
+    
     // Méthode utilitaire pour créer un enum depuis un String
     public static Priority fromString(String text) {
-        if (text == null) {
-            throw new IllegalArgumentException("Priority cannot be null");
-        }
-
         for (Priority p : Priority.values()) {
-            if (p.name().equalsIgnoreCase(text)) {
+            if (p.toString().equalsIgnoreCase(text) || p.name().equals(text)) {
                 return p;
             }
         }
-        throw new IllegalArgumentException("Priority " + text + " not found");
+        throw new IllegalArgumentException("Priorité inconnue : " + text);
     }
 }

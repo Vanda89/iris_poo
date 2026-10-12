@@ -28,7 +28,7 @@ public class Task {
     }
 
     public String getTitle() {
-        return title;
+        return this.title;
     }
 
     public void setTitle(String title) {
@@ -36,7 +36,7 @@ public class Task {
     }
 
     public String getDescription() {
-        return description;
+        return this.description;
     }
 
     public void setDescription(String description) {
@@ -44,7 +44,7 @@ public class Task {
     }
 
     public Priority getPriority() {
-        return priority;
+        return this.priority;
     }
 
     public void setPriority(Priority priority) {

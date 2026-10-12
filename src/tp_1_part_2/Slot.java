@@ -24,11 +24,11 @@ public class Slot {
     }
 
     public LocalTime getEndTime() {
-        return startTime.plusMinutes(duration);
+        return this.startTime.plusMinutes(this.duration);
     }
 
     public void display() {
-        System.out.println("Heure de début : " + startTime.toString() + " - Heure de fin : " + getEndTime().toString() + " - Durée : " + duration + " - Salle : " + room);
+        System.out.println("Heure de début : " + this.startTime.toString() + " - Heure de fin : " + getEndTime().toString() + " - Durée : " + this.duration + " - Salle : " + this.room);
     }
 
     public boolean hasTimeConflict(Slot other) {
@@ -36,13 +36,13 @@ public class Slot {
             return false;
         }
 
-        return room.equalsIgnoreCase(other.room)
-                && startTime.isBefore(other.getEndTime())
+        return this.room.equalsIgnoreCase(other.room)
+                && this.startTime.isBefore(other.getEndTime())
                 && getEndTime().isAfter(other.startTime);
     }
 
     public LocalTime getStartTime() {
-        return startTime;
+        return this.startTime;
     }
 
     public void setStartTime(LocalTime startTime) {
@@ -50,7 +50,7 @@ public class Slot {
     }
 
     public int getDuration() {
-        return duration;
+        return this.duration;
     }
 
     public void setDuration(int duration) {
@@ -58,7 +58,7 @@ public class Slot {
     }
 
     public String getRoom() {
-        return room;
+        return this.room;
     }
 
     public void setRoom(String room) {
