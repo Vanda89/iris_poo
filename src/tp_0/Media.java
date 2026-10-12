@@ -75,9 +75,14 @@ public abstract class Media {
         this.rating = rating;
     }
 
-    @Override
+    @Override 
     public String toString() {
-        return title;
+        return "Media{" +
+                "title='" + title + '\'' +
+                ", year=" + year +
+                ", duration=" + duration +
+                ", rating=" + rating +
+                '}';
     }
 
 }
